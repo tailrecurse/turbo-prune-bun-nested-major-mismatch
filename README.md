@@ -6,7 +6,8 @@ having dropped the correct version. A subsequent `bun install` on the pruned loc
 then installs that out-of-range version. Under bun (the runtime these apps use) this can
 break at import time.
 
-Reproduces on **turbo 2.9.15** (latest) with **bun 1.3.14**.
+Verified on the turbo **`canary`** dist-tag (pinned in `package.json` / `bun.lock` —
+currently **`turbo@2.9.16-canary.2`**) with **bun 1.3.14**.
 
 ## The dependency shape
 
@@ -77,6 +78,6 @@ accepted but resolves a dependency outside its semver range.
 
 ## Environment
 
-- turbo: `2.9.15`
+- turbo: `canary` (`2.9.16-canary.2`)
 - bun: `1.3.14`
 - package manager: bun workspaces

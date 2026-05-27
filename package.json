@@ -7,7 +7,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "turbo": "2.9.15"
+    "turbo": "canary"
   },
   "dependencies": {
     "bs58": "5.0.0"
